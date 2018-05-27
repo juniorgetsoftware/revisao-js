@@ -24,3 +24,7 @@ function pegarValorNumerico(num){
 function escrever(onde, valor){
     document.getElementById(onde).innerHTML = valor;
 }
+
+function mudarCorDoTitulo(id) {
+    document.getElementById(id).setAttribute('style', 'color:blue');
+}
