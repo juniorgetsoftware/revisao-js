@@ -45,3 +45,18 @@ function escrever(onde, valor){
 function mudarCor(id) {
     document.getElementById(id).setAttribute('style', 'color:blue');
 }
+
+function codeHighlight(){
+    var code = document.getElementsByClassName('code');
+    for(var i = 0; i < code.length; i++){
+        code[i].innerHTML = code[i].innerHTML.toString()
+        .replace("=", "<span style=\"font-weight: bold\">=</span>")
+        .replace("{",  "<span style=\"font-weight: bold\">{</span>")
+        .replace("}", "<span style=\"font-weight: bold\">}</span>")
+        .replace("var", "<span style=\"font-weight: bold;color:blue;\">var</span>")
+        .replace("(", "<span style=\"font-weight: bold\">(</span>")
+        .replace(")", "<span style=\"font-weight: bold\">)</span>")
+        .replace("console", "<span style=\"font-weight:bold;color:blue;\">console</span>")
+        .replace("log", "<span style=\"font-weight: bold\">log</span>");
+    }
+}

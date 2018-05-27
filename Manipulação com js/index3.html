@@ -10,28 +10,25 @@
     <script src="main.js"></script>
 </head>
 
-<body>
+<body onload="codeHighlight()">
 
     <h1>Objetos em JS</h1>
     <h5>Declarando o objeto</h5>
-    <p class="code">
+    <div class="code">
         var objeto = {};
-    </p>
+    </div>
 
     <h5>Índices</h5>
 
     <div class="code">
         var objeto = {
-        <br/>
         <div class="tab">
             placa: 'ADD-443',
-            <br/> modelo: 'Sedã',
-            <br/> marca: 'Hyundai'
-            <br/>
+            modelo: 'Sedã',
+            marca: 'Hyundai'
         </div>
         };
-        <br/> console.log("Adicionando índices (atributos): ", objeto);
-        <br/>
+        console.log("Adicionando índices (atributos): ", objeto);
     </div>
 
     <h5>Imprimindo atributos</h5>
