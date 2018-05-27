@@ -25,7 +25,23 @@
         </li>
     </ul>
 
+    <h1>Escopo</h1>
+    <p>
+        var v1 = 2;<br/>
+        let v2 = 3;<br/>
+        var v1 = 5;<br/>
+        let v2 = 6; <b><i>{ SyntaxError: redeclaration of let v2 }</i></b><br/>
+
+    </p>
+
+
     <script>
+
+        var v1 = 2;
+        let v2 = 3;
+
+        var v1 = 5;
+        //let v2 = 6; { SyntaxError: redeclaration of let v2 }
 
         console.log("palavra é " + typeof "palavra");
         console.log("4 é " + typeof 4);
