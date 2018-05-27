@@ -1,8 +1,12 @@
-function criarElemento(){
-    var p = document.createElement("p");
-    p.innerHTML = 'Hello World! ';
-    document.body.appendChild(p);
+function removerPrimeiroElementoDaLista(id){
+    var filho = document.getElementById(id).firstChild;
+    document.getElementById(id).removeChild(filho);
+}
 
+function criarElemento(){
+    var h1 = document.createElement("h1");
+    h1.innerHTML = 'Hello World! ';
+    document.body.appendChild(h1);
 }
 
 function addChild(id) {
@@ -38,6 +42,6 @@ function escrever(onde, valor){
     document.getElementById(onde).innerHTML = valor;
 }
 
-function mudarCorDoTitulo(id) {
+function mudarCor(id) {
     document.getElementById(id).setAttribute('style', 'color:blue');
 }

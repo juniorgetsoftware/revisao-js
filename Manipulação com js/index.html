@@ -19,14 +19,15 @@
     <input type="text" id="num2" name="num2">
 
     <button onclick="somar()" >Calcular</button>
-    <button onclick="mudarCorDoTitulo('h1')">mudar cor do título</button>
+    <button onclick="mudarCor('h1')">mudar cor do título</button>
 
     <h4 id="resultado"></h4>
 
     <br/>
     <br>
 
-    <button onclick="addChild('list1')">Adicionar item</button>
+    <button onclick="addChild('list1')" name="list1">Adicionar item</button>
+    <button onclick="removerPrimeiroElementoDaLista('list1')">Remover primeiro item</button>
     <ul id="list1">
         <li>item 1</li>
         <li>item 2</li>
@@ -41,13 +42,13 @@
         </ul>
     </ul>
 
-    <ol id="list2">
+    <ol id="list2" class="bg-cinza" onclick="mudarCor('list2')">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
         <li>item 4</li>
         <li>item 5</li>
-</ol>
+    </ol>
 
 
     
