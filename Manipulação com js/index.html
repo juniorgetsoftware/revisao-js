@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <button onclick="criarElemento()" >Criar elemento</button>
     <h1 id="h1">Olá mundo!</h1>
     <label>Número 1</label>
     <input type="text" id="num1" name="num2">
@@ -17,10 +18,38 @@
     <label>Número 2</label>
     <input type="text" id="num2" name="num2">
 
-    <input type="button" onclick="somar()" value="Calcular">
-    <input type="button" onclick="mudarCorDoTitulo('h1')" value="mudar cor do título">
+    <button onclick="somar()" >Calcular</button>
+    <button onclick="mudarCorDoTitulo('h1')">mudar cor do título</button>
 
     <h4 id="resultado"></h4>
+
+    <br/>
+    <br>
+
+    <button onclick="addChild('list1')">Adicionar item</button>
+    <ul id="list1">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <ul id="list1-1">
+            <ul>
+                <li>item 5.1</li>
+                <li>item 5.2</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <ol id="list2">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+</ol>
+
+
     
 </body>
 </html>

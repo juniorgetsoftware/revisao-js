@@ -1,3 +1,16 @@
+function criarElemento(){
+    var p = document.createElement("p");
+    p.innerHTML = 'Hello World! ';
+    document.body.appendChild(p);
+
+}
+
+function addChild(id) {
+    var item = document.createElement('li');
+    item.innerHTML = 'novo item';
+    document.getElementById(id).appendChild(item);
+}
+
 function somar(){
     num1 = pegarValorNumerico('num1');
     num2 = pegarValorNumerico('num2');
