@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estudando JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <h1>Escopo Local</h1>
+    <p>
+            var global = "global";<br/>
+            let global2 = "global2";<br/>
+            const pi = 3.14;<br/>
+
+    </p>
+
+    <h1>Escopo Global</h1>
+    <p>
+            function funcao (){<br/>
+                var local = "local"; <b><i>{ variável local, válida somente dntro do escopo da função } </i></b><br/>
+                globalLocal = "global declarado em local"; <br/>
+                console.log(local);<br/>
+            }
+
+    </p>
+
+    <h1>Constantes</h1>
+    <p>
+            const pi = 3.14;<br/>
+
+    </p>
+
+
+    <script>
+
+        var global = "global";
+        let global2 = "global2";
+        const pi = 3.14;
+
+        function funcao (){
+            var local = "local"; // variável local, válida somente dntro do escopo da função.
+            globalLocal = "global declarado em local"; 
+            console.log(local);
+        }
+
+        console.log(global);
+        console.log(global2);
+
+        funcao();
+        console.log(globalLocal);
+        //pi = 123; TypeError: invalid assignment to const `pi'
+        console.log(pi);
+
+
+    </script>
+</body>
+
+</html>
