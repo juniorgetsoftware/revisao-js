@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estudando JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <h1>Objetos em JS</h1>
+    <h5>Declarando o objeto</h5>
+    <p class="code">
+        var objeto = {};
+    </p>
+
+    <h5>Índices</h5>
+
+    <div class="code">
+        var objeto = {
+        <br/>
+        <div class="tab">
+            placa: 'ADD-443',
+            <br/> modelo: 'Sedã',
+            <br/> marca: 'Hyundai'
+            <br/>
+        </div>
+        };
+        <br/> console.log("Adicionando índices (atributos): ", objeto);
+        <br/>
+    </div>
+
+    <h5>Imprimindo atributos</h5>
+    <div class="code">
+        console.log(objeto.placa);
+        <br/> console.log(objeto.marca);
+    </div>
+
+    <h5>Atributo de objeto</h5>
+    <div class="code">
+        var objeto = {
+            <div class="tab">
+        <br/> placa: 'ADD-443',
+        <br/> modelo: 'Sedã',
+        <br/> marca: 'Hyundai',
+        <br/> opcionais: {
+            <div class="tab">
+        <br/> cambio: 'automático',
+        <br/> combustivel: 'flex'
+        <br/> }
+        </div>
+        </div>
+        <br/> };
+        <br/> console.log("Atributo do tipo object: ", objeto);
+        <br/> console.log(objeto.opcionais.cambio);
+        <br/>
+    </div>
+
+
+    <h5>Atributo composto</h5>
+    <div class="code">
+            var objeto = {
+                <div class="tab">
+            <br/> placa: 'ADD-443',
+            <br/> modelo: 'Sedã',
+            <br/> marca: 'Hyundai',
+            <br/> opcionais: {
+                <div class="tab">
+            <br/> cambio: 'automático',
+            <br/> combustivel: 'flex'
+            <br/> },
+            </div>"possui-ar-condicionado" : true
+            </div>
+            <br/> };
+            <br/> console.log(objeto["possui-ar-condicionado"]);
+            <br/>
+        </div>
+
+
+    <script>
+
+        var objeto = {};
+
+        console.log("Declarando objeto: ", objeto);
+
+        var objeto = {
+            placa: 'ADD-443',
+            modelo: 'Sedã',
+            marca: 'Hyundai'
+
+        };
+        console.log("Adicionando índices (atributos): ", objeto);
+
+        console.log(objeto.placa);
+        console.log(objeto.marca);
+
+        var objeto = {
+            placa: 'ADD-443',
+            modelo: 'Sedã',
+            marca: 'Hyundai',
+            opcionais: {
+                cambio: 'automático',
+                combustivel: 'flex'
+            }
+        };
+        console.log("Atributo do tipo object: ", objeto);
+        console.log(objeto.opcionais.cambio);
+
+        var objeto = {
+            placa: 'ADD-443',
+            modelo: 'Sedã',
+            marca: 'Hyundai',
+            opcionais: {
+                cambio: 'automático',
+                combustivel: 'flex'
+            },
+            "possui-ar-condicionado": true
+        };
+        console.log("Atributo composto ('possui-ar-condicionado'): ", objeto["possui-ar-condicionado"]);
+
+    </script>
+</body>
+
+</html>

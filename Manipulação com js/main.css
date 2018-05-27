@@ -1,3 +1,16 @@
 .bg-cinza {
     background: grey;
 }
+
+.code {
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #e5e5e5;
+    color: #333333;
+    border-radius: 5px;
+}
+
+.tab {
+    padding-left: 2em;
+}
